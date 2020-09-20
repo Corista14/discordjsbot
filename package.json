@@ -1,16 +1,23 @@
 {
-  "name": "DiscordBotJS",
+  "name": "discordjsbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corista14/discordjsbot.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Corista14/discordjsbot/issues"
+  },
+  "homepage": "https://github.com/Corista14/discordjsbot#readme",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
     "discord.js": "^12.3.1"
   }
 }
