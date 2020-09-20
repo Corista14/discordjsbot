@@ -2,7 +2,7 @@ module.exports = {
     name: 'gay',
     description: 'Comando que diz a percentagem do quão gay és.',
     execute(message) {
-        message.reply(`Percentagem de gay: 0%, porque aqui ninguém é gay xD`);
+        message.reply(`Percentagem de panilas: 0%, porque aqui ninguém é gay xD`);
     }
 }
 
