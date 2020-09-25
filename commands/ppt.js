@@ -8,7 +8,7 @@ module.exports = {
 
 function playPPT(message, args) {
     const choices = ['Pedra', 'Papel', 'Tesoura'];
-    const userChoice = args.toLowerCase;
+    const userChoice = args;
     const pcRandomChoice = Math.floor(Math.random() * choices.length);
 
     if (pcRandomChoice == 'Pedra') {
