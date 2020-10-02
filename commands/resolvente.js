@@ -35,6 +35,6 @@ function calculateQuadraticEquation(message, a1, b2, c3) {
     }
 }
 
-function showSolution(a, b, c, x1, x2) {
-    return message.reply(`Equação: ${a}x^2 + ${b}x + ${c} = 0\nSolução: {${x1}, ${x2}}`)
+function showSolution(a2, b2, c2, x1, x2) {
+    message.reply(`Equação: ${a2}x^2 + ${b2}x + ${c2} = 0\nSolução: {${x1}, ${x2}}`)
 }
