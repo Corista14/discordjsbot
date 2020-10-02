@@ -27,7 +27,7 @@ function calculateQuadraticEquation(message, a1, b2, c3) {
 
             x_soma = x_subtração = -b / (2 * a);
 
-            showSolution(x_soma, x_subtração)
+            showSolution(a, b, c, x_soma, x_subtração)
 
         } else {
             message.reply(`Solução: Impossível, pois a raiz dá negativa`);
