@@ -4,6 +4,6 @@ module.exports = {
     name: 'help',
     description: 'Mostra os comandos disponíveis.',
     execute (message) {
-        message.reply(helpCommandContent);
+        message.reply(`${helpCommandContent}`);
     }
 }
