@@ -21,13 +21,13 @@ function calculateQuadraticEquation(message, a1, b2, c3) {
             x_soma = (-b + Math.sqrt(bionómio_descriminante)) / (2 * a);
             x_subtração = (-b - Math.sqrt(bionómio_descriminante)) / (2 * a);
 
-            showSolution(a, b, c, x_soma, x_subtração)
+            message.reply(`Equação: ${a}x^2 + ${b}x + ${c} = 0\nSolução: {${x1}, ${x2}}`)
 
         } else if (bionómio_descriminante == 0) {
 
             x_soma = x_subtração = -b / (2 * a);
 
-            showSolution(a, b, c, x_soma, x_subtração)
+            message.reply(`Equação: ${a}x^2 + ${b}x + ${c} = 0\nSolução: {${x1}, ${x2}}`)
 
         } else {
             message.reply(`Solução: Impossível, pois a raiz dá negativa`);
@@ -35,6 +35,3 @@ function calculateQuadraticEquation(message, a1, b2, c3) {
     }
 }
 
-function showSolution(a2, b2, c2, x1, x2) {
-    message.reply(`Equação: ${a2}x^2 + ${b2}x + ${c2} = 0\nSolução: {${x1}, ${x2}}`)
-}
