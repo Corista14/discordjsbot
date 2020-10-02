@@ -21,7 +21,7 @@ function calculateQuadraticEquation(message, a1, b2, c3) {
             x_soma = (-b + Math.sqrt(bionómio_descriminante)) / (2 * a);
             x_subtração = (-b - Math.sqrt(bionómio_descriminante)) / (2 * a);
 
-            showSolution(x_soma, x_subtração)
+            showSolution(a, b, c, x_soma, x_subtração)
 
         } else if (bionómio_descriminante == 0) {
 
