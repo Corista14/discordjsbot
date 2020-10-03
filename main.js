@@ -25,7 +25,7 @@ client.once('ready', () => {
 client.on('message', message => {
     //Se não começar com um ! e se for o BOT a enviar, então restringi-se o BOT de responder
     if(!message.content.startsWith(prefix) || message.author.bot) return;
-    const args = message.content.slice(prefix.length).split(/ +/); //Permite que hajam dois argumentos, por exemplo: !check wiki
+    const args = message.content.slice(prefix.length).split(/ +/); //Permite que hajam dois argumentos, por exemplo: !clear 100
     const command = args.shift().toLowerCase();
     client.commands.get(command).execute(message, args, client)
 
@@ -33,4 +33,3 @@ client.on('message', message => {
 
   
 client.login(process.env.token);
-//client.login('NzU1OTA5OTA4MTk2NzUzNDI4.X2KJ9g.iDY4DmEdxdbyFICOVmSUiuviXAQ');
